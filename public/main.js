@@ -55,7 +55,7 @@ let comp ;
 
 
 loader.load(
-	"public/assets/Computer-case-compressed.glb",
+	"public/assets/Computer-case-compressed-2.gltf",
 	function ( gltf ) {
     comp = gltf.scene
     comp.position.set(-.6, 0, 3.6)
