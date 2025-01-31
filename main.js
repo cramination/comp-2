@@ -55,17 +55,12 @@ let comp ;
 
 
 loader.load(
-	"public/assets/Computer-case-compressed-2.gltf",
+	"public/assets/test-cube.gltf",
 	function ( gltf ) {
     comp = gltf.scene
     comp.position.set(-.6, 0, 3.6)
-    comp.scale.set(2, 2, 2)
+    //comp.scale.set(2, 2, 2)
 		scene.add( gltf.scene )
-    gltf.animations; // Array<THREE.AnimationClip>
-		gltf.scene; // THREE.Group
-		gltf.scenes; // Array<THREE.Group>
-		gltf.cameras; // Array<THREE.Camera>
-		gltf.asset; // Object
 	},
   (xhr) => {
     console.log((xhr.loaded / xhr.total * 100) + '% loaded');
@@ -76,7 +71,7 @@ loader.load(
 );  
 
 
-// animate
+// animates
 
 function animate() {
     requestAnimationFrame( animate );
