@@ -55,7 +55,7 @@ let comp ;
 
 
 loader.load(
-	"public/assets/test-cube.gltf",
+	"assets/test-cube.gltf",
 	function ( gltf ) {
     comp = gltf.scene
     comp.position.set(-.6, 0, 3.6)
